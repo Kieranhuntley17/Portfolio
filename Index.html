@@ -1,35 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
     <link rel="stylesheet" href="/Sylesheets/styles.css">
-
 <head>
 </head>
 <body>
+
+    <img id="desktop-image" src="/Images/Background-xp.jpg" alt="desktop-image">
+    <nav id="taskbar">
+        <button id="minimised-about">Abou...</button>
+       <!-- <button class="minimised">#1</button>
+        <button class="minimised">#2</button> -->
+        <div id="clock">
+            
+        </div>
+    </nav>
+
     <div id="mainContainer">
         <div id="window1">
-            <div class="dragger">Project 1: Game Development<div class="cross">x</div></p></div>
-            <h4></h4>
-            <p></p>
+            <div class="dragger">Project 1: Game Development<div class="cross">-</div></p></div>
+            <div class="window-inner">
+                <p class="description"></p>
+        </div>
         </div>
         
-
         <div id="window2">
-            <div class="dragger" >Project 2: <div class="cross">x</div></p></div>
-            <h4></h4>
-            <p></p>
+            <div class="dragger" >Project 2: <div class="cross">-</div></div>
+            <div class="window-inner">
+                <p class="description"></p>
+            </div>
         </div>
 
-
-    </div>
-    <div id="window3">
-        <div class="dragger">About Me<div class="cross">x</div></p></div>
-        <p>For the past decade, I've immersed myself in the world of PCs. My journey began with modding games and creating game servers. While many found the issues frustrating, I loved the problem-solving aspect of fixing them.
-
-            Since getting my first computer, I've been building PCs and exploring all aspects of computing. From hardware to software, networking to cybersecurity, I've delved into every corner of this field.
-            
-            Challenges that frustrate others have always excited me, driving my passion for technology and continuous learning.
-            
-            Thanks for visiting my page. Whether you're here for insights, advice, or to share a passion for PCs, I'm excited to connect with you.</p>
+        <div id="window3">
+            <div class="dragger">About Me<div class="cross">-</div></p></div>
+            <div class="window-inner">
+            <p class="description">For the past decade, I've immersed myself in the world of PCs. My journey began with modding games and creating game servers. 
+                While many found the issues frustrating, I loved the problem-solving aspect of fixing them.
+                <br>
+                Since getting my first computer, I've been building PCs and exploring all aspects of computing. 
+                From hardware to software, networking to cybersecurity, I've delved into every corner (even graphic design and music production).
+                <br>
+                Challenges that frustrate others have always excited me, driving my passion for continuous learning and problem solving.
+                </p>
+            </div>
+        </div>
     </div>
 </body>
 
@@ -38,3 +51,5 @@
 <script type="text/javascript" src="/Apps/windows.js"></script>
 <script type="text/javascript" src="/Apps/random.js"></script>
 <script type="text/javascript" src="/Apps/sendToTop.js"></script>
+<script type="text/javascript" src="/Apps/clock.js"></script>
+<script type="text/javascript" src="/Apps/taskbar.js"></script>
