@@ -2,38 +2,38 @@ body {
   background-color: antiquewhite;
 }
 
-#window1 {
+#window1{
   width: 300px;
   height: 200px;
   background: #ccc;
   border-top-left-radius: 2%;
   border-top-right-radius: 2%;
   position: absolute;
-  z-index: 9;
+  z-index: 0;
   border: 1px solid black;
   text-align: left;
 }
 
-#window2 {
+#window2{
   width: 300px;
   height: 200px;
   background: #ccc;
   border-top-left-radius: 2%;
   border-top-right-radius: 2%;
   position: absolute;
-  z-index: 9;
+  z-index: 0;
   border: 1px solid black;
   text-align: left;
 }
 
-#window3 {
-  width: 300px;
+#window3{
+  width: 600px;
   height: 200px;
   background: #ccc;
   border-top-left-radius: 2%;
   border-top-right-radius: 2%;
   position: absolute;
-  z-index: 9;
+  z-index: 0;
   border: 1px solid black;
   text-align: left;
 }
@@ -46,6 +46,18 @@ body {
   padding-left: 5px;
   background: #495bac ;
   color: white;
+}
+
+#window1:hover {
+  z-index: 1;
+}
+
+#window2:hover {
+  z-index: 1;
+}
+
+#window3:hover {
+  z-index: 1;
 }
 
 .cross {

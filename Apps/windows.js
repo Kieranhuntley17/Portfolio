@@ -8,7 +8,6 @@ function dragElement(elmnt) {
   if (document.getElementById(elmnt.id + "header")) {
     // if present, the header is where you move the DIV from:
     document.getElementById(elmnt.id + "header").onmousedown = dragMouseDown;
-    document.getElementById(elmnt.id + "header").style.zIndex = "1"
   } else {
     // otherwise, move the DIV from anywhere inside the DIV:
     elmnt.onmousedown = dragMouseDown;

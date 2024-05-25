@@ -1,7 +1,7 @@
 // Function to shuffle the order of elements within a container
 
 let nh,nw; 
-const maxh = 500;
+const maxh = 450;
 const minh = 0;
 
 const maxw = 1000;
