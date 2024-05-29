@@ -4,14 +4,18 @@
 <head>
 </head>
 <body>
-
     <img id="desktop-image" src="/Images/Background-xp.jpg" alt="desktop-image">
     <nav id="taskbar">
-        <button id="minimised-about">Abou...</button>
-        <button id="minimised-p1">#1</button>
-        <button id="minimised-p2">#2</button>
+        
+        <button onclick="dropDown()" id="start" >Start</button>
+        <button id="minimised-about">About Me</button>
+        <button id="minimised-p1">Project 1: Game...</button>
+        <button id="minimised-p2">Project 2: </button>
+
+        <div id="start-content">
+            <h1>nothing to see here</h1> 
+        </div>
         <div id="clock">
-            
         </div>
     </nav>
 
@@ -48,6 +52,7 @@
 
 </html>
 
+<script type="text/javascript" src="/Apps/dropdown.js"></script>
 <script type="text/javascript" src="/Apps/windows.js"></script>
 <script type="text/javascript" src="/Apps/random.js"></script>
 <script type="text/javascript" src="/Apps/sendToTop.js"></script>

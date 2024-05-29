@@ -16,7 +16,9 @@ body {
 
 #desktop-image {
   overflow-x: hidden;
-  max-width: 100%;
+  width: 100%;
+  max-height: 1080px;
+  object-fit: cover;
 }
 
 /* Window parameters */
@@ -141,8 +143,9 @@ nav {
   position: fixed;
   width: 100%;
   height: 30px;
-  background-color: #ccc;
+  background-color: #5d71ca;
   border-style: outset;
+  border-left: 0;
 }
 
 .minimised {
@@ -168,12 +171,13 @@ nav {
   width: 100px;
   height: 100%;
   border-left-style: outset;
-  border-right: 1px, 1px, 1px, 1px;
+  border: 1px, 1px, 1px, 1px;
   float: right;
 }
 
-/* Minimized window buttons */
-#minimised-about {
+/* Minimized window/start buttons */
+
+#start {
   font-size: 15px;
   border: none;
   background-color: #ccc;
@@ -184,15 +188,40 @@ nav {
   width: 75px;
   height: 100%;
 }
+#start-content {
+  position: absolute;
+  height: 600px;
+  width: 400px;
+  background-color: #ccc;
+  bottom: 33px;
+  left: 0;
+  margin: 0;
+  border-style: outset;
+  border-bottom: 0;
+}
+
+
+#minimised-about {
+  font-size: 15px;
+  border: none;
+  background-color: #ccc;
+  border-style: outset;
+  color: white;
+  text-align: left;
+  text-decoration: none;
+  width: 150px;
+  height: 100%;
+  margin-left: 10px;
+}
 #minimised-p1 {
   font-size: 15px;
   border: none;
   background-color: #ccc;
   border-style: outset;
   color: white;
-  text-align: center;
+  text-align: left;
   text-decoration: none;
-  width: 75px;
+  width: 150px;
   height: 100%;
 }
 #minimised-p2 {
@@ -201,8 +230,8 @@ nav {
   background-color: #ccc;
   border-style: outset;
   color: white;
-  text-align: center;
+  text-align: left;
   text-decoration: none;
-  width: 75px;
+  width: 150px;
   height: 100%;
 }
